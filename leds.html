@@ -1,6 +1,10 @@
 <html>
-<form action="/cgi-bin/led_pwm.py" method="POST">
+<form action="/cgi-bin/leds.py" method="POST">
+<input type="radio" name="option" value="r" checked> Red LED <br>
+<input type="radio" name="option" value="b"> Blue LED <br>
+<input type="radio" name="option" value="g"> Green LED <br>
+<input type="submit" value="Submit">
 <input type="range" name="slider1" min ="0" max="100" value ="0"><br>
-<input type="submit" value=”Change LED brightness">
+<input type="submit" value="Change LED brightness">
 </form>
 </html>

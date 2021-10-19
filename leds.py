@@ -2,7 +2,7 @@
 import cgi
 data = cgi.FieldStorage()
 s1 = data.getvalue('slider1')
-with open('led-pwm.txt', 'w') as f:
+with open('led_pwm.txt', 'w') as f:
   f.write(str(s1))
 print('Content-type: text/html\n\n')
 print('<html>')

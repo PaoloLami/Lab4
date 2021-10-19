@@ -4,8 +4,8 @@
 import RPi.GPIO as GPIO
 import time
 ledPin = 17
-gpio.setmode(GPIO.BCM)
-gpio.setup(ledPin, GPIO.OUT)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(ledPin, GPIO.OUT)
 pwm = GPIO.PWM(ledPin, 100) # PWM object on our pin at 100 Hz
 pwm.start(0) # start with LED off
 while True:
